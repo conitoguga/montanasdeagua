@@ -12,6 +12,12 @@ body {
     margin-bottom: 0!important;
 }
 
+:root {
+    --pink-color: #FAB8B1;
+    --darkblue-color: #2C345C;
+    --green-color: #99DCC6;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -90,7 +96,7 @@ nav a:hover {
 }
 
 section.campaign div {
-    color: #FA8778;
+    color: #2C345C;
 }
 
 .campaign,
@@ -100,6 +106,30 @@ section.campaign div {
     text-justify: inter-word;
     word-break: break-word;
     hyphens: auto;
+}
+
+section.infographics div.infographics-text {
+    padding: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.circle img {
+    max-width: 100%;
+}
+
+div.rectangle {
+    height: 2px;
+    width: 100%;
+    background-color: var(--pink-color);
+    margin: 40px 0 40px 0;
+}
+
+div.info-rectangle img {
+    width: 100%;
 }
 
 section.campaign h2 {
@@ -231,6 +261,9 @@ div.site-links a img {
         font-size: 20px;
         padding: 0;
     }
+    div.phone-img {
+        display: none;
+    }
     .gradient {
         background: rgb(44, 52, 92);
         background: linear-gradient(0deg, rgba(44, 52, 92, 1) 18%, rgba(242, 159, 151, 1) 53%, rgba(208, 239, 240, 1) 83%, rgba(255, 255, 255, 1) 100%);
@@ -298,7 +331,6 @@ div.site-links a img {
     }
     .video,
     .campaign,
-    .infography,
     .title {
         height: 100vh;
         width: 100wh;
@@ -322,7 +354,7 @@ div.site-links a img {
     }
     section.campaign div h2 {
         font-size: 70px;
-        border-bottom: solid 8px #FA8778;
+        border-bottom: solid 8px #2C345C;
     }
     .bi-section {
         display: grid;
@@ -357,49 +389,6 @@ div.site-links a img {
         max-width: 768px;
         color: #FAB8B1;
         line-height: 1.6;
-    }
-    .p2a-box {
-        height: 400px;
-        z-index: 3;
-    }
-    .button-space {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 200px;
-        margin-bottom: 200px;
-    }
-    .button {
-        background-color: #FAB8B1;
-        border: none;
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 50px;
-        width: 401px;
-        height: 155px;
-        border-radius: 30px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border: 2px solid #FAB8B1;
-    }
-    .button a {
-        text-decoration: none;
-        text-align: center;
-        padding-bottom: 10px;
-        color: #2C345C;
-    }
-    .button {
-        transition-duration: 0.4s;
-    }
-    .button:hover {
-        background-color: #2C345C;
-        border: 2px solid #FAB8B1;
-        color: #FAB8B1;
-    }
-    .button:hover a {
-        color: #FAB8B1;
     }
     section.long h2 {
         font-size: 50px;
