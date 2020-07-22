@@ -150,13 +150,6 @@ div.circle img {
     max-width: 100%;
 }
 
-div.rectangle {
-    height: 2px;
-    width: 80%;
-    background-color: var(--pink-color);
-    margin: 40px auto;
-}
-
 div.info-rectangle img {
     width: 100%;
 }
@@ -267,6 +260,20 @@ a.button-up img {
 div.advocacy-actionwidget {
     border: 1px #fff!important;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 6px!important;
+}
+
+svg.mountain {
+    /* width: 70%; */
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+svg.mountain path {
+    stroke: var(--pink-color);
+    stroke-width: 10px;
+    stroke-linecap: round;
+    fill: none;
 }
 
 @media (min-width: 769px) {
@@ -404,6 +411,14 @@ div.advocacy-actionwidget {
     /* SECCIÓN INFOGRAFÍA */
     h3 {
         font-size: 3rem;
+    }
+    div.wave {
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
+    svg.mountain {
+        width: 70%;
     }
     div.infographics-text h3,
     section.infographics-2 h3,
