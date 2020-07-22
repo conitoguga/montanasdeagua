@@ -127,9 +127,9 @@ div.circle img {
 
 div.rectangle {
     height: 2px;
-    width: 100%;
+    width: 80%;
     background-color: var(--pink-color);
-    margin: 40px 0 40px 0;
+    margin: 40px auto;
 }
 
 div.info-rectangle img {
@@ -169,39 +169,8 @@ section.long h2 {
     padding: 20px;
 }
 
-.button-space {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.button {
-    background-color: #FAB8B1;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    width: 200px;
-    height: 80px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 2px solid #FAB8B1;
-}
-
-.button a {
-    text-decoration: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: #2C345C;
-}
-
-.button {
-    transition-duration: 0.4s;
+h3 {
+    font-size: 1.5rem;
 }
 
 .bottom {
@@ -392,6 +361,15 @@ div.site-links a img {
         font-size: 100px;
         border-bottom: solid 10px #2C345C;
     }
+    /* SECCIÓN INFOGRAFÍA */
+    h3 {
+        font-size: 3rem;
+    }
+    div.infographics-text h3,
+    section.infographics-2 h3,
+    section.infographics-2 h4 {
+        text-align: center;
+    }
     section.infographics-2 {
         display: flex;
         flex-direction: column;
@@ -399,12 +377,24 @@ div.site-links a img {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "content content";
     }
-    div.rearrange {
-        width: 100%;
+    div.description-info {
+        height: 400px;
     }
-    div.circle {
+    div.rearrange {
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    div.rearrange p {
+        margin: 0 auto;
+        max-width: 472px;
+    }
+    div.circle img {
         height: 400px;
         width: 400px;
+        margin: 0 auto;
     }
     .long {
         display: flex;
