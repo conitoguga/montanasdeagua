@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -386,8 +387,12 @@ div.site-links a img {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "content content";
     }
-    div.description-info {
+    div.description-info,
+    div.description-info-pink {
         height: 400px;
+    }
+    div.description-info-pink {
+        color: #FA8778;
     }
     div.rearrange {
         margin: 0 auto;
