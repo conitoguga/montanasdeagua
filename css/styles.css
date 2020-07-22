@@ -121,6 +121,15 @@ section.infographics div.infographics-text {
     flex-direction: column;
 }
 
+div.infographics-text {
+    padding: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 div.circle img {
     max-width: 100%;
 }
@@ -394,6 +403,9 @@ div.site-links a img {
     div.circle img {
         height: 400px;
         width: 400px;
+        margin: 0 auto;
+    }
+    div.text-end {
         margin: 0 auto;
     }
     .long {
