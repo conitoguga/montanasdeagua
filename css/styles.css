@@ -264,6 +264,11 @@ a.button-up img {
     max-width: 40px;
 }
 
+div.advocacy-actionwidget {
+    border: 1px rgba(0, 0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 6px;
+}
+
 @media (min-width: 769px) {
     body {
         font-size: 20px;
