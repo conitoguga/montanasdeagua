@@ -122,6 +122,11 @@ section.infographics div.infographics-text {
     flex-direction: column;
 }
 
+div.p-wrapper {
+    padding: 25px;
+    margin: 0 auto;
+}
+
 div.infographics-text {
     padding: 25px;
     max-width: 700px;
@@ -412,6 +417,14 @@ div.site-links a img {
     }
     div.text-end {
         margin: 0 auto;
+    }
+    div.p-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr 1fr);
+        grid-template-areas: "content content content";
+    }
+    div.p-wrapper p {
+        padding: 20px;
     }
     .long {
         display: flex;
