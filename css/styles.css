@@ -23,12 +23,20 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 20px 0 20px;
+    align-items: center;
+    /* margin: 10px 20px 0 20px; */
+    padding: 20px 20px 0 20px;
     height: 50px;
+    /* margin-top: 20px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
 }
 
 header img.logo {
-    width: 80px;
+    width: 50px;
+    height: auto;
+    mix-blend-mode: screen;
+    /* padding-bottom: 10px; */
 }
 
 div.infografia-desktop {
@@ -36,10 +44,10 @@ div.infografia-desktop {
 }
 
 .menu-toggle {
-    z-index: 3;
-    position: fixed;
-    right: 0;
-    margin: 10px 20px 0 20px;
+    z-index: 4;
+    /* position: absolute; */
+    /* right: 20px; */
+    /* margin: 10px 20px 0 20px; */
 }
 
 .menu {
@@ -84,20 +92,9 @@ nav a:hover {
     width: max-content;
 }
 
-.videoWrapper {
-    position: relative;
-    margin-top: 20px;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    height: 0;
-}
-
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+iframe#video {
+    width: 100vw;
+    height: calc(100vw/1.78);
 }
 
 section.campaign div {
@@ -121,6 +118,20 @@ a.inline-a:hover {
     text-justify: inter-word;
     word-break: break-word;
     hyphens: auto;
+}
+
+.wave-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.wave-wrapper svg {
+    width: 30%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 section.infographics div.infographics-text {
@@ -177,12 +188,13 @@ span.highlight {
 }
 
 section.long div {
-    color: rgb(44, 52, 92);
+    color: #2A5D9A;
     line-height: 1.6;
+    mix-blend-mode: multiply;
 }
 
 section.long .dark-text {
-    color: rgb(44, 52, 92);
+    color: #2A5D9A;
 }
 
 section.long h2 {
@@ -276,6 +288,22 @@ svg.mountain path {
     fill: none;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    /* margin: 10px 20px 0 20px; */
+}
+
+.sticky+.campaign {
+    /* padding-top: 102px; */
+}
+
+section.montanas {
+    padding: 25px;
+}
+
 @media (min-width: 769px) {
     body {
         font-size: 20px;
@@ -308,9 +336,17 @@ svg.mountain path {
         z-index: 3;
     }
     header img.logo {
-        width: 150px!important;
+        width: 120px!important;
         position: fixed;
         padding-top: 10px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .sticky+.campaign {
+        /* padding-top: 102px; */
     }
     .videoWrapper {
         margin-top: 0!important;
@@ -416,6 +452,7 @@ svg.mountain path {
         max-width: 800px;
         display: block;
         margin: 0 auto;
+        transform: translateX(30px);
     }
     svg.mountain {
         width: 70%;
