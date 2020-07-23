@@ -19,6 +19,10 @@ body {
     --green-color: #99DCC6;
 }
 
+.header-hidden {
+    visibility: hidden;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -332,11 +336,11 @@ section.montanas {
         justify-content: space-between;
         padding: 0px 20px 0 20px;
         margin: 0;
-        height: auto;
+        height: 120px;
         z-index: 3;
     }
     header img.logo {
-        width: 120px!important;
+        width: 100px!important;
         position: fixed;
         padding-top: 10px;
     }
@@ -356,7 +360,7 @@ section.montanas {
         z-index: 3;
         position: fixed;
         right: 0;
-        margin: 20px 20px 0 20px;
+        margin: 0 20px 0 20px;
     }
     .menu {
         top: 0;

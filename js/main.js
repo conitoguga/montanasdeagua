@@ -21,8 +21,10 @@ var sticky = header.offsetTop;
 
 function myFunction() {
     if (window.pageYOffset > sticky) {
+        header.classList.remove("header-hidden");
         header.classList.add("sticky");
     } else {
+        header.classList.add("header-hidden");
         header.classList.remove("sticky");
     }
 }
