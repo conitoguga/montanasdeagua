@@ -301,12 +301,15 @@ svg.mountain path {
 }
 
 .sticky+.campaign {
-    /* padding-top: 102px; */
+    padding-top: 50px;
 }
 
 section.montanas {
     padding: 25px;
 }
+
+
+/* DESKTOP */
 
 @media (min-width: 769px) {
     body {
@@ -350,7 +353,7 @@ section.montanas {
         width: 100%;
     }
     .sticky+.campaign {
-        /* padding-top: 102px; */
+        padding-top: 120px;
     }
     .videoWrapper {
         margin-top: 0!important;
