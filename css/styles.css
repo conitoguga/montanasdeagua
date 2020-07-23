@@ -20,10 +20,12 @@ body {
 }
 
 .header-hidden {
-    visibility: hidden;
+    opacity: 0;
 }
 
 header {
+    opacity: 1;
+    transition: 0.5s ease;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -191,21 +193,20 @@ span.highlight {
     text-align: center;
 }
 
-section.long div {
+section.long div p {
     color: #2A5D9A;
     line-height: 1.6;
     mix-blend-mode: multiply;
 }
 
-section.long .dark-text {
-    color: #2A5D9A;
-}
-
 section.long h2 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 700!important;
     text-align: center;
     padding: 20px;
+    color: var(--pink-color);
+    mix-blend-mode: initial!important;
+    z-index: 2;
 }
 
 h3 {
@@ -301,7 +302,7 @@ svg.mountain path {
 }
 
 .sticky+.campaign {
-    padding-top: 50px;
+    padding-top: 78px;
 }
 
 section.montanas {
